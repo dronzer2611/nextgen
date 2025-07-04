@@ -31,10 +31,10 @@ class DemoControllerTest {
     private MockMvc mockMvc;
 
     @Test
-    void testRemoveFirstAndLast_Nornmal() throws Exception{
+    void testRemoveFirstAndLast_Nornmal() throws Exception {
         mockMvc.perform(get("/remove").param("input", "abhijeet"))
                 .andExpect(status().isOk())
-                .andExpect(content().string("gourav"));
+                .andExpect(content().string("bhijee"));
     }
 
     @Test
